@@ -1,0 +1,27 @@
+2022-04-21 20:21:18,218 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-21 20:21:18,240 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2022-04-21 20:21:18,276 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-21 20:21:18,290 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-21 20:21:43,428 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-21 20:21:43,549 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2022-04-21 20:21:43,636 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-21 20:21:43,658 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-21 20:21:57,402 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-21 20:21:57,402 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Detected StandardServletMultipartResolver
+2022-04-21 20:21:57,402 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Detected AcceptHeaderLocaleResolver
+2022-04-21 20:21:57,402 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Detected FixedThemeResolver
+2022-04-21 20:21:57,404 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@70ee42e8
+2022-04-21 20:21:57,405 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Detected org.springframework.web.servlet.support.SessionFlashMapManager@5bc8f68a
+2022-04-21 20:21:57,405 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-04-21 20:21:57,405 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 3 ms
+2022-04-21 20:21:57,416 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] POST "/api/createuser/", parameters={}
+2022-04-21 20:21:57,426 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [http-nio-8080-exec-2] Mapped to org.audiostore.api.controller.AudioStoreController#createUser(UserTO)
+2022-04-21 20:21:57,520 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-2] Read "application/json;charset=UTF-8" to [UserTO [Id=null, userId=123456, name=sa, age=42, gender=M, addressTO=[AddressTO [flatNo=a-14, floor= (truncated)...]
+2022-04-21 20:21:57,633 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor [http-nio-8080-exec-2] Using 'application/json', given [*/*] and supported [application/json]
+2022-04-21 20:21:57,634 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor [http-nio-8080-exec-2] Writing ["User Created"]
+2022-04-21 20:21:57,645 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed 200 OK
+2022-04-21 20:21:57,752 DEBUG o.h.SQL [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] insert into user (age, gender, name, userid) values (?, ?, ?, ?)
+2022-04-21 20:21:57,764 DEBUG o.h.SQL [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] insert into address (dist, flatno, floor, landmark, pincode, postoffice, state, street) values (?, ?, ?, ?, ?, ?, ?, ?)
+2022-04-21 20:21:57,770 DEBUG o.h.SQL [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] insert into address (dist, flatno, floor, landmark, pincode, postoffice, state, street) values (?, ?, ?, ?, ?, ?, ?, ?)
+2022-04-21 20:21:57,798 DEBUG o.h.SQL [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] insert into user_address (user_id, address_id) values (?, ?)
+2022-04-21 20:21:57,801 DEBUG o.h.SQL [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] insert into user_address (user_id, address_id) values (?, ?)
